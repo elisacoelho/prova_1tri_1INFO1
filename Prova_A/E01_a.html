@@ -8,10 +8,17 @@
 
     //ENTRADA
 
+const gramasDiarios = Number(prompt(`Informe quantas gramas de ração o cão come diariamente:`));
 
     //PROCESSAMENTO
 
+    const gramasFinalDeSemana = Number (gramasDiarios) + (15/100*gramasDiarios) 
+    const calculo1 = gramasFinalDeSemana * 2
+    const calculo2 = gramasDiarios * 5
+    const calculo3 = calculo1 + calculo2
 
     //SAÍDA
+
+alert(`O peso da ração consumida semanalmente é de ${calculo3} gramas.`);
 
 </script>

@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-
+const precoPosto1 = Number(prompt(`Informe o preço orçado no primeiro posto:`).replace(",","."));
+const precoPosto2 = Number(prompt(`Informe o preço orçado no segundo posto:`).replace(",","."));
+const precoPosto3 = Number(prompt(`Informe o preço orçado no terceiro posto:`).replace(",","."));
 
     //PROCESSAMENTO
-
+const media = (precoPosto1) + (precoPosto2) + (precoPosto3);
+const calculo = (media) / 3;
 
     //SAÍDA
+
+alert(`A média de preços do combustível é de R$ ${calculo.toFixed(2).replace(".",",")}`);
 
 </script>

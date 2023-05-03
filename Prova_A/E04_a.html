@@ -2,17 +2,26 @@
     /*
     PROBLEMA: Custo da viagem
     Considere que um veículo percorre 14 quilômetros com um litro de gasolina, que custa R$ 5,19.
-    Informe para o programa a distância de uma viagem e peça para o programa calcular quantos litros de gasolina serão necessários para realizar a viagem e o custo total do combustível.
+    Informe para o programa a distância de uma viagem e peça para o programa calcular quantos litros de gasolina serão necessários para 
+    realizar a viagem e o custo total do combustível.
     Considere também que a cada 50km haverá um pedágio, no custo de R$ 4,90. Calcule o valor total dos pedágios.
     Apresente os resultados e também apresente o custo total da viagem (Combústivel + Pedágio).
     */
 
     //ENTRADA
+const distancia = Number(prompt(`Informe a distância da viagem:`));
 
 
     //PROCESSAMENTO
+const litrosGasolina = (distancia) / 14 
+const valorGasolina = (litrosGasolina) * (5.19);
+const pedagio = (distancia) / 50;
+const valorPedagio = pedagio * 4.90;
+const calculo =  (valorGasolina) + (valorPedagio);
 
 
     //SAÍDA
+
+    alert(`Serão necessários ${Math.ceil(litrosGasolina)} litros de gasolina para realizar a viagem e o custo do combustível será de R$${valorGasolina.toFixed(2).replace(".",",")}. O custo dos pedágios para esta distância foi de ${valorPedagio.toFixed(2).replace(".",",")}. O custo total da viagem foi de R$${calculo.toFixed(2).replace(".",",")}`)
 
 </script>
